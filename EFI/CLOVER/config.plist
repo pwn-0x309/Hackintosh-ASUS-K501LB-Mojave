@@ -236,7 +236,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>nv_disable=1 kext-dev-mode=1 -lilubetaall darkwake=no lilucpu=7</string>
+		<string>nv_disable=1 kext-dev-mode=1 -lilubetaall darkwake=no lilucpu=7 dart=0</string>
 		<key>CustomLogo</key>
 		<false/>
 		<key>Debug</key>
@@ -249,6 +249,8 @@
 		<string>LegacyBiosDefault</string>
 		<key>NeverHibernate</key>
 		<false/>
+		<key>NoEarlyProgress</key>
+		<true/>
 		<key>Timeout</key>
 		<integer>1</integer>
 		<key>XMPDetection</key>
@@ -557,8 +559,6 @@
 			<true/>
 			<key>Legacy</key>
 			<false/>
-			<key>Linux</key>
-			<false/>
 			<key>Tool</key>
 			<true/>
 		</dict>
@@ -609,44 +609,6 @@
 				<key>Replace</key>
 				<data>
 				AQAA6xc=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Patch Framebuffer 0x16260006</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				AQULAAAEAAAHBQAAAgQLAAAEAAAHBQAA/wAAAAEAAABA
-				AAAA
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>AppleIntelBDWGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>
-				AQULAAAIAACCAAAAAgQLAAAIAACCAAAA/wAAAAEAAABA
-				AAAA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>change F%uT%04x to F%uTxxxx in AppleBacklightInjector.kext (credit RehabMan)</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				RiV1VCUwNHgA
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleBacklight</string>
-				<key>Replace</key>
-				<data>
-				RiV1VHh4eHgA
 				</data>
 			</dict>
 		</array>
@@ -704,6 +666,8 @@
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
+		<key>CustomUUID</key>
+		<string>C69E4BD1-C793-5C4C-929E-FBFF77558256</string>
 		<key>InjectKexts</key>
 		<string>Detect</string>
 		<key>InjectSystemID</key>
