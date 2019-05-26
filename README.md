@@ -6,6 +6,11 @@
 
 Bring your Notebook ASUS K501LB works with OSX 10.14 Mojave for daily usage.
 
+## What are not working?
+1. Card wifi -> Replace it with one in the whitelist
+2. Sleep -> Couldn't fix
+3. Facetime video call -> Couldn't fix
+
 ## What has been included?
 
 1. EFI Clover configuration and kexts for booting with both USB installer and OSX after installation.
