@@ -559,6 +559,8 @@
 			<true/>
 			<key>Legacy</key>
 			<false/>
+			<key>Linux</key>
+			<false/>
 			<key>Tool</key>
 			<true/>
 		</dict>
